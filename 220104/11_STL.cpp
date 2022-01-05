@@ -53,5 +53,22 @@ int main()
 //  - 정렬 - O(N)
 
 // 2. Hastable
+// - 탐색: O(1)
+//   데이터 저장되는 순서가 다릅니다.
+//  => 퀵소트 : O(NlogN)
 
+// map => 키 - 값 쌍으로 이루어진 데이터
+//  C++ / java
+//   c## /Swift - Dictionary 라고도 부릅니다.
 
+#include <map>
+
+int mian()
+{
+    std::map<std::string, std::string> data;
+    data["홍길동"] = "010-1234-5678";
+    data["이순신"] = "010-2222-3333";
+
+    std:cout << data["홍길동"] << std::endl;
+    std:cout << data["이순신"] << std::endl;
+}
