@@ -32,10 +32,10 @@ public:
 
 int main()
 {
-  Point p1;         // Point()
-  Point p2(10, 20); // Point(int, int)
-  Point p3(p2);     // Point(const Point&)
+  //Point p1;         // Point()
+  //Point p2(10, 20); // Point(int, int)
+ // Point p3(p2);     // Point(const Point&)
 
-  p2.Print();
-  p3.Print();
+  //p2.Print();
+  //p3.Print();
 }
