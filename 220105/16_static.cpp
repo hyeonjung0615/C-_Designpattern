@@ -34,10 +34,29 @@ public:
 
 // Car.cpp
 int Car::cnt = 0;
-// 정적 멤버 데이터 변수는 반드시 클래스 외부에 선언해야 합니다.
+// 1. 정적 멤버 데이터 변수는 반드시 클래스 외부에 선언해야 합니다.
+// 2. 정적 멤버 데이터 변수는 객체를 만들지 않아도 메모리에 존재합니다.
+//  => 전역변수의 수명과 동일합니다.
+// 3. 정적 멤버 데이터 변수는 객체의 크기에 포함되지 않습니다.
+// 4. 정적 멤버 데이터 변수의 접근 방법 2가지
+//   1) Car::cnt => 권장
+//   2) Car c;
+//      c.cnt
+
+struct User
+{
+  int a;
+  int b;
+};
 
 int main()
 {
+  cout << sizeof(User) << endl;
+  cout << sizeof(Car) << endl;
+
+  cout << Car::cnt << endl;
+
   Car c1, c2;
   cout << Car::cnt << endl; // ?
+  cout << c1.cnt << endl;
 }
