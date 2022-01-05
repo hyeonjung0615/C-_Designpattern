@@ -10,6 +10,7 @@ using namespace std;
 /*
 int buff[10];
 int idx = 0;
+
 // push
 void push(int v)
 {
