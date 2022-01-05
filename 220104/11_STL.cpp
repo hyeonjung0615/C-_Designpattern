@@ -49,7 +49,9 @@ int main()
 
 // 탐색
 // 1. Tree
+//  - 탐색 - O(logN)
+//  - 정렬 - O(N)
 
-// 2. HasMap
+// 2. Hastable
 
 
