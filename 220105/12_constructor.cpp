@@ -54,7 +54,8 @@ int main()
   Point *p3 = new Point(10, 20);
   delete p3;
   // Point x[3];
-  // 기본자가 없는 경우 반드시 명시적인 초기화를 해야합니다.
+  // 기본 생성자가 없는 경우 반드시 명시적인 초기화를 해야합니다.
+  
   // Point x[2] = {Point(10, 20),
   //               Point(20, 30)};
   // Point p1;
