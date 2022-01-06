@@ -29,6 +29,7 @@ public:
 
 void foo(const Point &p)
 {
+  // 상수 멤버 함수만 사용할 수 있습니다.
   //p.move();
   p.print();
 }
