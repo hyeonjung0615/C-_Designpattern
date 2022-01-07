@@ -4,14 +4,14 @@ using namespace std;
 class A {
     int a;
 public:
-    void foo() { cout << "foo" << endl;}
+    virtual void foo() { cout << "foo" << endl;}
 };
 
 // 상속 관계가 아닙니다.
 class B{
     int b;
 public:
-    void goo() { cout << "goo" << endl;}
+    virtual void goo() { cout << "goo" << endl;}
 };
 
 int main()
