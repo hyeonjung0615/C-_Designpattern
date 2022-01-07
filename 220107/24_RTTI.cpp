@@ -12,6 +12,7 @@ public:
     int color = 200;
 };
 
+// 부모 소멸자가 가상이면 자식 클래스의 소멸자도 가상입니다.
 class Sedan : public Car {
 public:
     int speed = 100;
