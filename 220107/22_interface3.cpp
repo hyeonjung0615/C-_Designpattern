@@ -25,6 +25,10 @@ struct BlackBoxCamera {
 
     virtual void StartRecord() = 0;
     virtual void StopRecord() = 0;
+    
+    virtual void NewFeature() {
+        
+    }
 };
 
 // 2. BlackBoxCamera를 이용하는 코드로 작성합니다.
