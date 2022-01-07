@@ -15,6 +15,7 @@ public:
   /*
   Point(int a, int b)
   {
+    // 대입의 형태로 동작합니다.
     x = a;
     y = b;
   }
