@@ -15,13 +15,22 @@ using namespace std;
 class User {
   std::string name_;
   int age_;
+
  public:
   // User(const std::string& a, int b) : name(a), age(b) {}
   User(const std::string& name, int age) : name_(name), age_(age) {}
   // : this->name(name), this->age(age) {} // error!
+
   void set(const std::string& name, int age) {
+    // 1. this를 명시합니다.
     // this->name = name;
     // this->age = age;
+    
+    // 2. 멤버 데이터의 이름을 다른 형식으로 사용합니다
+    // ex) name_ / age_
+    ..     _name / _age  - 권장하지 않습니다.
+    //      m_name / m_age
+    
     name_ = name;
     age_ = age;
   }
