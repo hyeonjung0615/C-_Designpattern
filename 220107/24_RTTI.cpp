@@ -56,9 +56,9 @@ void Go(Car* p)
 
 void Go2(Car* p)
 {
-    //실행 시간에 하위 캐스팅을 타입 체크를 수행하면서 하고 싶다.
+    // 실행 시간에 하위 캐스팅을 타입 체크를 수행하면서 하고 싶다.
     // => dynamic_cast
-    // : 가상함수 테이블을 이용합니다.
+    //  : 가상함수 테이블을 이용합니다.
 
     Sedan* s1 = static_cast<Sedan*>(p);
     Sedan* s2 = dynamic_cast<Sedan*>(p);
@@ -67,10 +67,9 @@ void Go2(Car* p)
     cout << s2 << endl;
     cout << endl;
 
-    if (s2 != nullptr){
-        cout << "speed: " << s2-> speed << endl;
+    if (s2 != nullptr) {
+        cout << "speed: " << s2->speed << endl;
     }
-
 }
 
 int main()
@@ -78,6 +77,9 @@ int main()
     Car c;
     Sedan s;
 
-    Go(&c);
-    Go(&s);
+    // Go(&c);
+    // Go(&s);
+
+    Go2(&c);
+    Go2(&s);
 }
