@@ -46,6 +46,7 @@ public:
     static void* _threadLoop(void* arg)
     {
         Thread* self = static_cast<Thread*>(arg);
+        // 정적 멤버 함수안에서 일반 멤버 함수를 호출하는 방법
         self->threadLoop();
 
         return 0;
