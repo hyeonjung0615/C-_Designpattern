@@ -25,11 +25,13 @@ public:
     {
     }
 
-    friend std::istream& operator>>(std::istream& is, Point& p)
-    {
-        return is >> p.x >> p.y;
-    }
+    friend std::istream& operator>>(std::istream& is, Point& p);
 };
+
+std::istream& operator>>(std::istream& is, Point& p)
+{
+    return is >> p.x >> p.y;
+}
 
 int main()
 {
