@@ -8,4 +8,6 @@ int main()
 
     //++ ++ ++ ++n; 에러
     printf("%d\n", n);
+
+    printf("...\n");
 }
