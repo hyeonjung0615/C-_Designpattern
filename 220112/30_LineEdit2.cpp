@@ -67,6 +67,10 @@ public:
     }
 };
 
+// Template Method
+// 1) 런타이에 정책을 변경할 수 없습니다.
+// 2) 다른 종류의 클래스에서 해당 정책을 재사용할 수 없습니다.
+
 int main()
 {
     // LineEdit edit;
