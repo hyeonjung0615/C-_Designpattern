@@ -79,8 +79,26 @@ public:
     const T& front() { return head->data; }
 };
 
+
+// 정리
+// 반복자 (Iterator Pattern)
+//  : 컨테이너(복합 객체)의 내부 구조에 상관없이 요소를 열거하는 객체를 의미합니다.
+
+#include <list>
+#include <vector>
+
 int main()
 {
+    list<int> l = { 1, 2, 3, 4, 5 };
+    vector<int> v = { 1, 2, 3, 4, 5 };
+
+    auto p = l.begin();
+
+    while (p != l.end()) {
+        cout << *p << endl;
+        p++;
+    }
+    
     Slist<int> s;
     s.push_front(10);
     s.push_front(20);
