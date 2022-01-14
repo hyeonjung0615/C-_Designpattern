@@ -116,9 +116,28 @@ public:
     }
 };
 
+class MacroCommand : public Command {
+    vector<Command*> v; // 여러개의 명령을 저장합니다. - 재귀적 합성
+                        //  : Composite Pattern
+
+public:
+    void AddCommand(Command* p) { v.push_back(p); }
+
+    void Execute() override
+    {
+        for (auto e : v)
+            e->Execute();
+    }
+};
+
 int main()
 {
     vector<Shape*> v;
+
+    MacroCommand mc;
+    mc.AddCommand(new AddRectCommand(v));
+    mc.AddCommand(new AddCircleCommand(v));
+    mc.Execute();
 
     Command* pCommand = nullptr;
 
