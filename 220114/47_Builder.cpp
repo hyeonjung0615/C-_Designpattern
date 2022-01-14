@@ -31,12 +31,13 @@ public:
 
     Character Construct()
     {
+        // 3. 신발
+        pBuilder->CreateShoe();
+
         // 1. 얼굴
         pBuilder->CreateHead();
         // 2. 몸통
         pBuilder->CreateUniform();
-        // 3. 신발
-        pBuilder->CreateShoe();
 
         return pBuilder->GetResult();
     }
